@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('Assets/fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+/* ===video=== */
+.hero-video {
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-video video {
+  position: absolute;
+}
+
+.hero-overlay img.logo {
+  margin-top: 5%;
+  max-width: 80%;
+  height: auto;
+}
+
+/* === Estilo para el formulario === */
+form .input-group {
+  max-width: 400px;
+  width: 100%;
+}
+
+form input.form-control {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+form button.btn-red {
+  background-color: #E84738;
+  color: white;
+  border: none;
+  border-radius: 0 0.25rem 0.25rem 0;
+  transition: background-color 0.3s ease;
+}
+
+form button.btn-red:hover {
+  background-color: #bf3a2e;
+  color: white;
+}
+
+/* === Secciones generales === */
+section {
+  padding: 12rem 0;
+}
+
+.text-white {
+  color: white !important;
+  text-align: center;
+}
+
+.h2 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.bg-dark {
+  background-color: #000 !important;
+}
+
+/* === Footer === */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 2rem 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer img {
+  width: 80px;
+  height: auto;
+}
+
