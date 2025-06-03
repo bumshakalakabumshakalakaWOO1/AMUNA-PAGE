@@ -20,7 +20,6 @@ body {
 }
 
 .hero-overlay img.logo {
-  margin-top: 5%;
   max-width: 80%;
   height: auto;
 }
@@ -107,3 +106,11 @@ footer img {
   height: auto;
 }
 
+.nosotros-texto {
+  display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}

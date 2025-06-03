@@ -1,151 +1,252 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Amuna.mx</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amuna.mx</title>
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- AOS CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
 
-  <!-- Tu CSS personalizado -->
-  <link rel="stylesheet" href="Assets/css/style.css">
-</head>
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="Assets/css/style.css" />
+  </head>
 
-<body>
-
-<!-- Video con formulario -->
-<section class="hero-video position-relative">
-  <video autoplay muted loop playsinline class="position-absolute w-100 h-100 object-fit-cover top-0 start-0 z-n1">
-    <source src="Assets/video/video-fondo.mp4" type="video/mp4">
-  </video>
-  <div class="container">
-    <div class="hero-overlay text-white text-center">
-      <img src="Assets/image/Logo amuna.png" class="logo img-fluid" alt="Logo Amuna" loading="lazy">
-      <form class="w-100 d-flex justify-content-center">
-        <div class="input-group w-75 w-md-50">
-          <input type="email" class="form-control" placeholder="Escribe tu correo electrónico..." style="border-radius: 20px 0 0 20px;">
-          <button class="btn btn-red" style="border-radius: 0 20px 20px 0;">Enviar</button>
+  <body>
+    <!-- Video con formulario -->
+    <section class="hero-video position-relative" style="height: 100vh">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="position-absolute w-100 h-100 object-fit-cover top-0 start-0 z-n1"
+      >
+        <source src="Assets/video/video-fondo.mp4" type="video/mp4" />
+      </video>
+      <div class="container">
+        <div class="hero-overlay text-white text-center">
+          <img
+            src="Assets/image/Logo amuna.png"
+            class="logo img-fluid"
+            alt="Logo Amuna"
+            loading="lazy"
+          />
+          <form class="w-100 d-flex justify-content-center">
+            <div class="input-group w-75 w-md-50">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Escribe tu correo electrónico..."
+                style="border-radius: 20px 0 0 20px"
+              />
+              <button class="btn btn-red" style="border-radius: 0 20px 20px 0">
+                Enviar
+              </button>
+            </div>
+          </form>
+          <p class="mt-3">
+            Suscríbete para recibir promociones y descuentos especiales.
+          </p>
         </div>
-      </form>
-      <p class="mt-3">Suscríbete para recibir promociones y descuentos especiales.</p>
-    </div>
-  </div>
-</section>
-
-<!-- NOSOTROS SOMOS -->
-<section class="text-white text-start" style="background: linear-gradient(#E84738, #000);" data-aos="fade-up">
-  <div class="container">
-    <div class="row">
-      <div class="col-4 nosotros-texto">
-        <img src="Assets/image/amuna-run.png" alt="Amuna Run" class="icono-nosotros ">
-        <h2 class="h2">NOSOTROS SOMOS...</h2>
-        <p class="text-white">Somos el lugar donde la nutrición, el movimiento y el desarrollo personal
-          convergen para transformar vidas.</p>
-        <p class="text-white">Somos el entorno donde cuerpo, mente y alma se nutren en armonía. Aquí
-          cultivamos una vida consciente, plena y en constante crecimiento.</p>
       </div>
-      <div class="col-6">
-        <div class="text-center mb-4">
-          <img src="Assets/image/persona1.jpg" class="rounded-circle img-fluid mb-2" alt="Ren Hernández" loading="lazy">
-          <p><strong>Ren Hernández</strong><br>Coach Ontológica</p>
+    </section>
+
+    <!-- NOSOTROS SOMOS -->
+    <section
+      class="text-white text-start"
+      style="background: linear-gradient(#e84738, #000)"
+      data-aos="fade-up"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-6 nosotros-texto d-flex justify-content-center">
+            <img
+              src="Assets/image/amuna-run.png"
+              alt="Amuna Run"
+              class="icono-nosotros"
+            />
+            <h2 class="h2">NOSOTROS SOMOS...</h2>
+            <p class="text-white">
+              Somos el lugar donde la nutrición, el movimiento y el desarrollo
+              personal convergen para transformar vidas.
+            </p>
+            <p class="text-white">
+              Somos el entorno donde cuerpo, mente y alma se nutren en armonía.
+              Aquí cultivamos una vida consciente, plena y en constante
+              crecimiento.
+            </p>
+          </div>
+          <div class="col-6 d-flex justify-content-center">
+            <div class="card rounded-5" style="width: 18rem">
+              <div class="text-center pt-4">
+                <img
+                  src="Assets/image/persona-2-front.png"
+                  class="rounded-circle img-fluid mb-2"
+                  alt="Ren Hernández"
+                  loading="lazy"
+                />
+                <p><strong>Ren Hernández</strong><br />Coach Ontológica</p>
+              </div>
+              <div class="text-center">
+                <img
+                  src="Assets/image/persona-1-front.png"
+                  class="rounded-circle img-fluid mb-2"
+                  alt="Ian Holt"
+                  loading="lazy"
+                />
+                <p><strong>Ian Holt</strong><br />Nutriólogo Deportivo</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="text-center mb-4">
-          <img src="Assets/image/persona2.jpg" class="rounded-circle img-fluid mb-2" alt="Ian Holt" loading="lazy">
-          <p><strong>Ian Holt</strong><br>Nutriólogo Deportivo</p>
+      </div>
+    </section>
+
+    <!-- FILOSOFÍA -->
+    <section
+      class="text-white"
+      style="background: linear-gradient(#e84738, #000)"
+      data-aos="fade-up"
+    >
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-md-4 text-center filosofia-text">
+            <h2 class="h2">FILOSOFÍA</h2>
+            <p>
+              Creemos en regresar al lenguaje esencial del ser humano: uno sano,
+              natural y auténtico, que conecta al alimento con su verdadero
+              propósito. Sabemos que lo que consumimos tiene el poder de sanar o
+              herir, y esa elección define nuestra calidad de vida.
+            </p>
+            <p>
+              Creemos en la creación de una comunidad sólida, en la unión con
+              otros negocios y emprendedores que, desde la diversidad,
+              fortalecen el propósito colectivo. Juntos aprendemos,
+              evolucionamos y potenciamos nuestra capacidad para impactar más
+              vidas.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-
-<!-- FILOSOFÍA -->
-<section class="text-white" style="background: linear-gradient(#E84738, #000);" data-aos="fade-up">
-  <div class="container">
-    <div class="row justify-content-end">
-<div class="col-md-4 text-center filosofia-text">
-        <h2 class="h2">FILOSOFÍA</h2>
-        <p>Creemos en regresar al lenguaje esencial del ser humano: uno sano, natural
-        y auténtico, que conecta al alimento con su verdadero propósito. Sabemos
-        que lo que consumimos tiene el poder de sanar o herir, y esa elección
-        define nuestra calidad de vida.</p>
-        <p>Creemos en la creación de una comunidad sólida, en la unión con otros
-        negocios y emprendedores que, desde la diversidad, fortalecen el propósito
-        colectivo. Juntos aprendemos, evolucionamos y potenciamos nuestra capacidad
-        para impactar más vidas.</p>
+    <!-- MAPA -->
+    <section
+      class="py-5 text-center bg-dark text-white"
+      style="height: 100vh"
+      data-aos="fade-up"
+    >
+      <h3>¿DÓNDE NOS ENCONTRAMOS?</h3>
+      <div class="container mt-4">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.6472176923084!2d-86.827796!3d21.1401255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b9d0610241b%3A0xdd8f6ac36289e37c!2sAmuna!5e0!3m2!1ses-419!2smx!4v1717375200000!5m2!1ses-419!2smx"
+          width="100%"
+          height="500px"
+          style="border: 0; border-radius: 30px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+        <p class="mt-3">Av Tulum Plaza San Francisco, Cancún, Q. Roo</p>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<!-- MAPA -->
-<section class="py-5 text-center bg-dark text-white" data-aos="fade-up">
-  <h3>¿DÓNDE NOS ENCONTRAMOS?</h3>
-  <div class="container mt-4">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.6472176923084!2d-86.827796!3d21.1401255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b9d0610241b%3A0xdd8f6ac36289e37c!2sAmuna!5e0!3m2!1ses-419!2smx!4v1717375200000!5m2!1ses-419!2smx" 
-      width="100%" 
-      height="300px" 
-      style="border:0; border-radius: 30px;" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-    <p class="mt-3">Av Tulum Plaza San Francisco, Cancún, Q. Roo</p>
-  </div>
-</section>
-
-
-
-<!-- CAMPAÑAS -->
-<section class="py-5 text-white" style="background: linear-gradient(#E84738, #000);" data-aos="fade-up">
-  <div class="container text-center">
-    <h3 class="mb-4">CAMPAÑAS Y PROMOCIONES</h3>
-    <div class="row">
-      <div class="col-md-4 mb-3" data-aos="flip-left">
-        <img src="Assets/image/reto1.png" class="img-fluid rounded" alt="Reto Amuna" loading="lazy">
-        <p>Reto Amuna 6 días...</p>
+    <!-- CAMPAÑAS -->
+    <section
+      class="py-5 text-white"
+      style="background: linear-gradient(#e84738, #000)"
+      data-aos="fade-up"
+    >
+      <div class="container text-center">
+        <h3 class="mb-4">CAMPAÑAS Y PROMOCIONES</h3>
+          <div class="card rounded-5">
+            <div class="row px-4 py-4 d-flex align-items-center">
+              <div class="col-md-4" data-aos="flip-left">
+                <img
+                  src="Assets/image/Janna-Icon.webp"
+                  class="img-fluid rounded"
+                  alt="Reto Amuna"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col-md-4" data-aos="flip-up">
+                <img
+                  src="Assets/image/Rengar-Icon.webp"
+                  class="img-fluid rounded"
+                  alt="Convenios"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col-md-4" data-aos="flip-right">
+                <img
+                  src="Assets/image/sticker.png"
+                  class="img-fluid rounded"
+                  alt="Stickers"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
       </div>
-      <div class="col-md-4 mb-3" data-aos="flip-up">
-        <img src="Assets/image/convenios.png" class="img-fluid rounded" alt="Convenios" loading="lazy">
-        <p>Convenios con gimnasios...</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-4">
+      <img
+        src="Assets/image/vaso-footer.png"
+        alt="Logo vaso"
+        width="100%"
+        class="mb-3"
+        loading="lazy"
+      />
+      <div>
+        <a
+          href="https://www.instagram.com/amuna.mx/"
+          target="_blank"
+          class="mx-2"
+        >
+          <img
+            src="Assets/image/Instagram-icon.png"
+            alt="Instagram"
+            class="social-icon"
+            loading="lazy"
+          />
+        </a>
+        <a href="#" class="mx-2">
+          <img
+            src="Assets/image/tiktok-icon.png"
+            alt="TikTok"
+            class="social-icon"
+            loading="lazy"
+          />
+        </a>
+        <a href="#" class="mx-2">
+          <img
+            src="Assets/image/whatsapp-icon.png"
+            alt="WhatsApp"
+            class="social-icon"
+            loading="lazy"
+          />
+        </a>
       </div>
-      <div class="col-md-4 mb-3" data-aos="flip-right">
-        <img src="Assets/image/sticker.png" class="img-fluid rounded" alt="Stickers" loading="lazy">
-        <p>Encuentra los stickers...</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </footer>
 
-<!-- FOOTER -->
-<footer class="text-center py-4">
-  <img src="Assets/image/vaso-footer.png" alt="Logo vaso" width="100%" class="mb-3" loading="lazy">
-  <div>
-    <a href="https://www.instagram.com/amuna.mx/" target="_blank" class="mx-2">
-      <img src="Assets/image/Instagram-icon.png" alt="Instagram" class="social-icon" loading="lazy">
-    </a>
-    <a href="#" class="mx-2">
-      <img src="Assets/image/tiktok-icon.png" alt="TikTok" class="social-icon" loading="lazy">
-    </a>
-    <a href="#" class="mx-2">
-      <img src="Assets/image/whatsapp-icon.png" alt="WhatsApp" class="social-icon" loading="lazy">
-    </a>
-  </div>
-</footer>
-
-<!-- JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
-</body>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
