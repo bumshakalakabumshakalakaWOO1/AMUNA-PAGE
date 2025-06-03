@@ -22,6 +22,47 @@
   </head>
 
   <body>
+<!-- LOADER -->
+<div
+  id="loader"
+  class="position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center"
+  style="
+    z-index: 1050;
+    background-color: #f79f88;
+    background-image:
+      radial-gradient(circle at 20% 30%, #f79f88 0%, transparent 40%),
+      radial-gradient(circle at 70% 20%, #ed625d 0%, transparent 50%),
+      radial-gradient(circle at 50% 80%, #000000 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, #ed625d 0%, transparent 55%);
+    background-blend-mode: normal;
+    transition: opacity 0.5s ease;
+  "
+>
+  <!-- Capa de ruido/grano -->
+  <div
+    style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABO0lEQVRYR+3XsQ3CMBQF0f+7aMJkZRxgC+w1WCXqYj9LmbtP6Em/7piYlp1jcMkwkJGRkZGRkZGRkbkPMkP8ibGZgCrvbc7ekHsAATow1eR+GeUoDkHKvHqaFcZ4Udc4TFvlBBuA3fHzYcWMBKnv9aYz0eYhBeJ0GpXUjz8yMYz/EZOLIdRt3G8Ro9xLBCjzE6DHGeU7g3TIlSk8NsC95jE9zhGXvsjAE8wf0GNDOfRbDZcwpOxlF9UK51rHaRJ5wRXGMBKh5e/N4ilczHfbZHAAAAAElFTkSuQmCC');
+      opacity: 0.25;
+      mix-blend-mode: multiply;
+      pointer-events: none;
+      z-index: 1;
+    "
+  ></div>
+
+  <!-- Logo o gif cargando -->
+  <img
+    src="Assets/image/amuna.gif"
+    alt="Cargando..."
+    class="img-fluid"
+    style="max-width: 150px; z-index: 2"
+  />
+</div>
+
     <!-- Video con formulario -->
     <section class="hero-video position-relative" style="height: 100vh">
       <video
@@ -48,6 +89,7 @@
                 class="form-control"
                 placeholder="Escribe tu correo electrónico..."
                 style="border-radius: 20px 0 0 20px"
+                name="email"
               />
               <button class="btn btn-red" style="border-radius: 0 20px 20px 0">
                 Enviar
@@ -348,5 +390,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="./Assets/js/script.js"></script>
   </body>
 </html>
