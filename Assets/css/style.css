@@ -49,6 +49,27 @@ form button.btn-red:hover {
 }
 
 /* === Secciones generales === */
+.filosofia-text {
+  padding-right: 20px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain; /* Para que la imagen mantenga proporción */
+}
+
+.icono-nosotros {
+  max-width: 80px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+.text-white {
+  color: white !important;
+}
+
 section {
   padding: 12rem 0;
 }
@@ -59,10 +80,11 @@ section {
 }
 
 .h2 {
-    color: white;
-    text-align: center;
-    font-weight: bold;
+  color: white;
+  text-align: center;
+  font-weight: bold;
 }
+
 .bg-dark {
   background-color: #000 !important;
 }
@@ -81,7 +103,7 @@ footer a {
 }
 
 footer img {
-  width: 80px;
+  width: 650px;
   height: auto;
 }
 
