@@ -170,34 +170,134 @@
     >
       <div class="container text-center">
         <h3 class="mb-4">CAMPAÑAS Y PROMOCIONES</h3>
-          <div class="card rounded-5">
-            <div class="row px-4 py-4 d-flex align-items-center">
-              <div class="col-md-4" data-aos="flip-left">
-                <img
-                  src="Assets/image/Janna-Icon.webp"
-                  class="img-fluid rounded"
-                  alt="Reto Amuna"
-                  loading="lazy"
-                />
-              </div>
-              <div class="col-md-4" data-aos="flip-up">
-                <img
-                  src="Assets/image/Rengar-Icon.webp"
-                  class="img-fluid rounded"
-                  alt="Convenios"
-                  loading="lazy"
-                />
-              </div>
-              <div class="col-md-4" data-aos="flip-right">
-                <img
-                  src="Assets/image/sticker.png"
-                  class="img-fluid rounded"
-                  alt="Stickers"
-                  loading="lazy"
-                />
-              </div>
+        <!-- Desktop Version -->
+        <div class="card rounded-5 d-none d-md-block">
+          <div class="row px-4 py-4 d-flex align-items-center">
+            <div class="col-md-4" data-aos="flip-left">
+              <img
+                src="Assets/image/Janna-Icon.webp"
+                class="img-fluid rounded"
+                alt="Reto Amuna"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-md-4" data-aos="flip-up">
+              <img
+                src="Assets/image/Rengar-Icon.webp"
+                class="img-fluid rounded"
+                alt="Convenios"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-md-4" data-aos="flip-right">
+              <img
+                src="Assets/image/sticker.png"
+                class="img-fluid rounded"
+                alt="Stickers"
+                loading="lazy"
+              />
             </div>
           </div>
+        </div>
+
+        <!-- Mobile Carousel Version -->
+        <div class="d-block d-md-none">
+          <div
+            id="promocionesCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div
+                  class="card mx-auto"
+                  style="
+                    width: 18rem;
+                    height: 18rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <img
+                    src="Assets/image/Janna-Icon.webp"
+                    class="img-fluid rounded"
+                    alt="Reto Amuna"
+                    loading="lazy"
+                    style="max-height: 80%; object-fit: contain"
+                  />
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div
+                  class="card mx-auto"
+                  style="
+                    width: 18rem;
+                    height: 18rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <img
+                    src="Assets/image/Rengar-Icon.webp"
+                    class="img-fluid rounded"
+                    alt="Convenios"
+                    loading="lazy"
+                    style="max-height: 80%; object-fit: contain"
+                  />
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div
+                  class="card mx-auto"
+                  style="
+                    width: 18rem;
+                    height: 18rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <img
+                    src="Assets/image/sticker.png"
+                    class="img-fluid rounded"
+                    alt="Stickers"
+                    loading="lazy"
+                    style="max-height: 80%; object-fit: contain"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#promocionesCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#promocionesCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 
