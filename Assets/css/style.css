@@ -9,7 +9,7 @@ body {
   font-family: 'Lato', Arial, sans-serif;
 }
 
-/* ===video=== */
+/* === Video === */
 .hero-video {
   height: 100%;
   overflow: hidden;
@@ -55,7 +55,7 @@ form button.btn-red:hover {
 .social-icon {
   width: 32px;
   height: 32px;
-  object-fit: contain; /* Para que la imagen mantenga proporción */
+  object-fit: contain;
 }
 
 .icono-nosotros {
@@ -64,18 +64,13 @@ form button.btn-red:hover {
   margin-bottom: 10px;
 }
 
-
 .text-white {
   color: white !important;
+  text-align: center;
 }
 
 section {
   padding: 12rem 0;
-}
-
-.text-white {
-  color: white !important;
-  text-align: center;
 }
 
 .h2 {
@@ -105,17 +100,29 @@ footer img {
   width: 50%;
 }
 
+/* === Estilo para sección Nosotros === */
 .nosotros-texto {
   display: flex !important;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+/* === Media Queries para Responsivo === */
 @media (max-width: 768px) {
   .input-email {
     font-size: 14px;
+  }
+
+  .seccion-nosotros .col-12 {
+    margin-bottom: 5rem; /* Espaciado entre columnas en móvil */
+  }
+
+  .seccion-filosofia .col-12,
+  .seccion-filosofia .col-md-4,
+  .seccion-filosofia .col-md-5 {
+    margin-bottom: 5rem; /* Espaciado entre video y texto en móvil */
   }
 }
