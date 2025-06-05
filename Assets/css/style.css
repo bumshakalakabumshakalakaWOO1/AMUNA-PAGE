@@ -113,3 +113,9 @@ footer img {
     align-items: center;
     flex-direction: column;
 }
+
+@media (max-width: 768px) {
+  .input-email {
+    font-size: 14px;
+  }
+}

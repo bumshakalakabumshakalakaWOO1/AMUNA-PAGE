@@ -23,37 +23,23 @@
 
   <body>
 <!-- LOADER -->
+ 
 <div
   id="loader"
   class="position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center"
   style="
     z-index: 1050;
-    background-color: #f79f88;
+    background-color: #c36b56;
     background-image:
-      radial-gradient(circle at 20% 30%, #f79f88 0%, transparent 40%),
       radial-gradient(circle at 70% 20%, #ed625d 0%, transparent 50%),
-      radial-gradient(circle at 50% 80%, #000000 0%, transparent 50%),
-      radial-gradient(circle at 80% 70%, #ed625d 0%, transparent 55%);
-    background-blend-mode: normal;
-    transition: opacity 0.5s ease;
-  "
+      radial-gradient(circle at 90% 30%, #000000 0%, transparent 100%),
+      radial-gradient(circle at 30% 50%, #ebb690 0%, transparent 70%),
+      radial-gradient(circle at 80% 70%, #ed625d 0%, transparent 70%),
+      url('noise.svg');
+    background-blend-mode: overlay, multiply;
+      background-repeat:no repeat, repeat;
+    transition: opacity 0.5s ease;"
 >
-  <!-- Capa de ruido/grano -->
-  <div
-    style="
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABO0lEQVRYR+3XsQ3CMBQF0f+7aMJkZRxgC+w1WCXqYj9LmbtP6Em/7piYlp1jcMkwkJGRkZGRkZGRkbkPMkP8ibGZgCrvbc7ekHsAATow1eR+GeUoDkHKvHqaFcZ4Udc4TFvlBBuA3fHzYcWMBKnv9aYz0eYhBeJ0GpXUjz8yMYz/EZOLIdRt3G8Ro9xLBCjzE6DHGeU7g3TIlSk8NsC95jE9zhGXvsjAE8wf0GNDOfRbDZcwpOxlF9UK51rHaRJ5wRXGMBKh5e/N4ilczHfbZHAAAAAElFTkSuQmCC');
-      opacity: 0.25;
-      mix-blend-mode: multiply;
-      pointer-events: none;
-      z-index: 1;
-    "
-  ></div>
-
   <!-- Logo o gif cargando -->
   <img
     src="Assets/image/amuna.gif"
@@ -64,123 +50,149 @@
 </div>
 
     <!-- Video con formulario -->
-    <section class="hero-video position-relative" style="height: 100vh">
-      <video
-        autoplay
-        muted
-        loop
-        playsinline
-        class="position-absolute w-100 h-100 object-fit-cover top-0 start-0 z-n1"
-      >
-        <source src="Assets/video/video-fondo.mp4" type="video/mp4" />
-      </video>
-      <div class="container">
-        <div class="hero-overlay text-white text-center">
-          <img
-            src="Assets/image/Logo amuna.png"
-            class="logo img-fluid"
-            alt="Logo Amuna"
-            loading="lazy"
+<section class="hero-video position-relative" style="height: 100vh">
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    class="position-absolute w-100 h-100 object-fit-cover top-0 start-0 z-n1"
+  >
+    <source src="Assets/video/video-fondo.mp4" type="video/mp4" />
+    Tu navegador no soporta video HTML5.
+  </video>
+
+  <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-white text-center">
+    <div class="hero-overlay px-3 w-100">
+      <img
+        src="Assets/image/Logo amuna.png"
+        class="logo img-fluid mb-4"
+        alt="Logo Amuna"
+        loading="lazy"
+        style="max-width: 250px"
+      />
+
+      <form class="w-100 d-flex justify-content-center mb-3">
+        <div class="input-group" style="max-width: 500px">
+          <input
+            type="email"
+            class="form-control input-email"
+            placeholder="Escribe tu correo electrónico..."
+            name="email"
+            style="border-radius: 20px 0 0 20px"
+            required
           />
-          <form class="w-100 d-flex justify-content-center">
-            <div class="input-group w-75 w-md-50">
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Escribe tu correo electrónico..."
-                style="border-radius: 20px 0 0 20px"
-                name="email"
-              />
-              <button class="btn btn-red" style="border-radius: 0 20px 20px 0">
-                Enviar
-              </button>
-            </div>
-          </form>
-          <p class="mt-3">
-            Suscríbete para recibir promociones y descuentos especiales.
+          <button class="btn btn-red" type="submit" style="border-radius: 0 20px 20px 0">
+            Enviar
+          </button>
+        </div>
+      </form>
+
+      <p class="mt-2 small mx-auto text-white" style="max-width: 100%; width: 80%; font-size: 1rem">
+  Suscríbete para recibir promociones y descuentos especiales.
+</p>
+    </div>
+  </div>
+</section>
+
+<!-- NOSOTROS SOMOS -->
+<section
+  class="text-white text-center"
+  style="background: linear-gradient(#e84738, #000)"
+  data-aos="fade-up"
+>
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <!-- Columna del texto -->
+      <div class="col-12 col-md-6 d-flex flex-column align-items-center mb-4 mb-md-0">
+        <div class="text-wrapper" style="max-width: 450px; width: 100%;">
+          <img
+            src="Assets/image/amuna-run.png"
+            alt="Amuna Run"
+            class="icono-nosotros mb-3"
+          />
+          <h2 class="h2">NOSOTROS SOMOS...</h2>
+          <p>
+            Somos el lugar donde la nutrición, el movimiento y el desarrollo
+            personal convergen para transformar vidas.
+          </p>
+          <p>
+            Somos el entorno donde cuerpo, mente y alma se nutren en armonía.
+            Aquí cultivamos una vida consciente, plena y en constante
+            crecimiento.
           </p>
         </div>
       </div>
-    </section>
 
-    <!-- NOSOTROS SOMOS -->
-    <section
-      class="text-white text-start"
-      style="background: linear-gradient(#e84738, #000)"
-      data-aos="fade-up"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-6 nosotros-texto d-flex justify-content-center">
+      <!-- Columna del card de personas -->
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="card rounded-5 mt-md-2" style="width: 18rem">
+          <div class="text-center pt-4">
             <img
-              src="Assets/image/amuna-run.png"
-              alt="Amuna Run"
-              class="icono-nosotros"
+              src="Assets/image/persona-2-front.png"
+              class="rounded-circle img-fluid mb-2"
+              alt="Ren Hernández"
+              loading="lazy"
             />
-            <h2 class="h2">NOSOTROS SOMOS...</h2>
-            <p class="text-white">
-              Somos el lugar donde la nutrición, el movimiento y el desarrollo
-              personal convergen para transformar vidas.
-            </p>
-            <p class="text-white">
-              Somos el entorno donde cuerpo, mente y alma se nutren en armonía.
-              Aquí cultivamos una vida consciente, plena y en constante
-              crecimiento.
-            </p>
+            <p><strong>Ren Hernández</strong><br />Coach Ontológica</p>
           </div>
-          <div class="col-6 d-flex justify-content-center">
-            <div class="card rounded-5" style="width: 18rem">
-              <div class="text-center pt-4">
-                <img
-                  src="Assets/image/persona-2-front.png"
-                  class="rounded-circle img-fluid mb-2"
-                  alt="Ren Hernández"
-                  loading="lazy"
-                />
-                <p><strong>Ren Hernández</strong><br />Coach Ontológica</p>
-              </div>
-              <div class="text-center">
-                <img
-                  src="Assets/image/persona-1-front.png"
-                  class="rounded-circle img-fluid mb-2"
-                  alt="Ian Holt"
-                  loading="lazy"
-                />
-                <p><strong>Ian Holt</strong><br />Nutriólogo Deportivo</p>
-              </div>
-            </div>
+          <div class="text-center">
+            <img
+              src="Assets/image/persona-1-front.png"
+              class="rounded-circle img-fluid mb-2"
+              alt="Ian Holt"
+              loading="lazy"
+            />
+            <p><strong>Ian Holt</strong><br />Nutriólogo Deportivo</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <!-- FILOSOFÍA -->
-    <section
-      class="text-white"
-      style="background: linear-gradient(#e84738, #000)"
-      data-aos="fade-up"
-    >
-      <div class="container">
-        <div class="row justify-content-end">
-          <div class="col-md-4 text-center filosofia-text">
-            <h2 class="h2">FILOSOFÍA</h2>
-            <p>
-              Creemos en regresar al lenguaje esencial del ser humano: uno sano,
-              natural y auténtico, que conecta al alimento con su verdadero
-              propósito. Sabemos que lo que consumimos tiene el poder de sanar o
-              herir, y esa elección define nuestra calidad de vida.
-            </p>
-            <p>
-              Creemos en la creación de una comunidad sólida, en la unión con
-              otros negocios y emprendedores que, desde la diversidad,
-              fortalecen el propósito colectivo. Juntos aprendemos,
-              evolucionamos y potenciamos nuestra capacidad para impactar más
-              vidas.
-            </p>
-          </div>
-        </div>
+<section
+  class="text-white"
+  style="background: linear-gradient(#e84738, #000)"
+  data-aos="fade-up"
+>
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <!-- Columna del video -->
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <video
+          src="Assets/video/video-filosofía.mp4"
+          class="w-100"
+          controls
+          style="max-height: 600px; object-fit: cover; border-radius: 20px;"
+        >
+          Tu navegador no soporta la reproducción de video.
+        </video>
       </div>
-    </section>
+
+      <!-- Columna del texto -->
+      <div class="col-md-5 text-center filosofia-text">
+        <h2 class="h2">FILOSOFÍA</h2>
+        <p>
+          Creemos en regresar al lenguaje esencial del ser humano: uno sano,
+          natural y auténtico, que conecta al alimento con su verdadero
+          propósito. Sabemos que lo que consumimos tiene el poder de sanar o
+          herir, y esa elección define nuestra calidad de vida.
+        </p>
+        <p>
+          Creemos en la creación de una comunidad sólida, en la unión con
+          otros negocios y emprendedores que, desde la diversidad,
+          fortalecen el propósito colectivo. Juntos aprendemos,
+          evolucionamos y potenciamos nuestra capacidad para impactar más
+          vidas.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- MAPA -->
     <section
