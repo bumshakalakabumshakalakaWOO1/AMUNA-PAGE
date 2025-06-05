@@ -24,3 +24,21 @@ window.addEventListener("load", () => {
     }
   }, 5000);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const ids = ['personaRen', 'personaIan'];
+
+  // Detectar dispositivo táctil
+  const isTouchDevice = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+
+  if (!isTouchDevice) return; // Si no es táctil, no agregamos toggle por click
+
+  ids.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener('click', () => {
+        el.classList.toggle('active');
+      });
+    }
+  });
+});
