@@ -7,7 +7,23 @@
 
 body {
   font-family: 'Lato', Arial, sans-serif;
+  background-color: #c36b56;
+  background-image:radial-gradient(circle at 70% 20%, #ed625d 0%, transparent 50%),
+      radial-gradient(circle at 0% 30%, #000000 0%, transparent 100%),
+      radial-gradient(circle at 20% 20%, #ed625d 0%, transparent 50%),
+      radial-gradient(circle at 80% 0%, #ebb690 0%, transparent 100%),
+      radial-gradient(circle at 10% 50%, #000000 0%, transparent 100%),
+      radial-gradient(circle at 80% 70%, #ed625d 0%, transparent 20%),
+      url('noise.svg');
+    background-blend-mode: overlay, multiply;
+      background-repeat:no repeat, repeat;
+    transition: opacity 0.5s ease;";
+  background-size: 100% 400vh; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  min-height: 400vh; 
 }
+
 
 /* === Video === */
 .hero-video {
