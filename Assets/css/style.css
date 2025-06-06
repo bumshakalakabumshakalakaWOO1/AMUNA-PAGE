@@ -126,34 +126,35 @@ footer img {
     margin-bottom: 5rem; /* Espaciado entre video y texto en móvil */
   }
   
-.persona-hover {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto;
-  position: relative;
-  cursor: pointer;
-}
+  .persona-hover {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+  }
 
-.persona-hover img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  transition: opacity 0.3s ease;
-}
+  .persona-hover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: opacity 0.3s ease;
+  }
 
-.persona-hover .front {
-  opacity: 1;
-  z-index: 2;
-}
+  .persona-hover .front {
+    opacity: 1;
+    z-index: 2;
+  }
 
-.persona-hover .back {
-  opacity: 0;
-  z-index: 1;
-}
+  .persona-hover .back {
+    opacity: 0;
+    z-index: 1;
+  }
+} /* Cierre del media query para max-width: 768px */
 
 /* Hover para desktop */
 @media (hover: hover) and (pointer: fine) {
@@ -172,4 +173,34 @@ footer img {
 
 .persona-hover.active .back {
   opacity: 1 !important;
+}
+
+.persona-hover {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1rem; /* margen abajo para separar un poco del texto */
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 50%; /* mueve el borde redondeado aquí */
+}
+
+.persona-hover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.persona-hover .front {
+  opacity: 1;
+  z-index: 2;
+}
+
+.persona-hover .back {
+  opacity: 0;
+  z-index: 1;
 }
